@@ -14,12 +14,12 @@ nums = [2, 7, 11, 15]
 target = 17
 class Solution:
     def twoSum(self, nums, target):
-        hm = {}
+        m = {}
         for i, num in enumerate(nums):
             n = target - num
             if n not in m:
                 m[num] = i
-                print(m)
+                #print(m)
             else:
                 return [m[n], i]
 
